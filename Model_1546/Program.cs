@@ -35,9 +35,9 @@ namespace Model_1546
 
 
 
-            for (int i = 0; i < LatRx.Length; i++)
+            for (int i = 0; i < 5/*LatRx.Length*/; i++)
             {
-                for (int j = 0; j < LatTx.Count; j++)
+                for (int j = 0; j < 5/*LatTx.Count*/; j++)
                 {
                     nameTx = NameTx[j];
                     nameRx = NameRx[i];
@@ -54,11 +54,10 @@ namespace Model_1546
                     E = Calculate_Field.CalculateField(Distance, 10, 700, Heff, "a", 0, false, TCA, 40, 40);
                     Powgain = E - 20 * Math.Log10(0.7) - 137.2 + Math.Round(Gain, 2);
                     Pow = E - 20 * Math.Log10(0.7) - 137.2;
-                    Console.WriteLine(String.Format("{0} to {1} Field strength is {2}", nameTx,nameRx,E));
+                    //Output.WriteHeaders(nameTx, nameRx, LatTx[0], LongTx[0], Distance, E, Gain, HorAten, VertAten, Powgain, Pow);
+                    Output.WriteCSV(nameTx, nameRx, LatTx[i], LongTx[i], Distance, E, Gain, HorAten, VertAten, Powgain, Pow);
                 }
-
             }
-
         }
     }
 }

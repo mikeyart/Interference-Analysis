@@ -1,0 +1,141 @@
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\bin\Debug\Model_1546.exe.config
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\bin\Debug\Model_1546.exe
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\bin\Debug\Model_1546.pdb
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\obj\Debug\Model_1546.csprojAssemblyReference.cache
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\obj\Debug\Model_1546.csproj.ResolveComReference.cache
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\obj\Debug\Model_1546.csproj.CoreCompileInputs.cache
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\obj\Debug\Model_1546.exe
+D:\Mihai\FAF\Teza de licenta\Frontend\Model_1546\obj\Debug\Model_1546.pdb
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Model_1546.exe.config
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Model_1546.exe
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Model_1546.pdb
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.csprojAssemblyReference.cache
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.csproj.ResolveComReference.cache
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.csproj.CoreCompileInputs.cache
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.exe
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.pdb
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\obj\Debug\Model_1546.csproj.CopyComplete
+D:\XProject\Model_1546\bin\Debug\Model_1546.exe.config
+D:\XProject\Model_1546\bin\Debug\Model_1546.exe
+D:\XProject\Model_1546\bin\Debug\Model_1546.pdb
+D:\XProject\Model_1546\obj\Debug\Model_1546.csprojAssemblyReference.cache
+D:\XProject\Model_1546\obj\Debug\Model_1546.csproj.ResolveComReference.cache
+D:\XProject\Model_1546\obj\Debug\Model_1546.csproj.CoreCompileInputs.cache
+D:\XProject\Model_1546\obj\Debug\Model_1546.csproj.CopyComplete
+D:\XProject\Model_1546\obj\Debug\Model_1546.exe
+D:\XProject\Model_1546\obj\Debug\Model_1546.pdb
+D:\XProject\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\XProject\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\XProject\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\XProject\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\XProject\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\XProject\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\XProject\Model_1546\bin\Debug\Newtonsoft.Json.dll
+D:\XProject\Model_1546\bin\Debug\Newtonsoft.Json.xml
+D:\XProject\Model_1546\bin\Debug\System.Buffers.dll
+D:\XProject\Model_1546\bin\Debug\System.Memory.dll
+D:\XProject\Model_1546\bin\Debug\System.Numerics.Vectors.dll
+D:\XProject\Model_1546\bin\Debug\System.Text.Encodings.Web.dll
+D:\XProject\Model_1546\bin\Debug\System.Text.Json.dll
+D:\XProject\Model_1546\bin\Debug\System.ValueTuple.dll
+D:\XProject\Model_1546\bin\Debug\System.Buffers.xml
+D:\XProject\Model_1546\bin\Debug\System.Memory.xml
+D:\XProject\Model_1546\bin\Debug\System.Numerics.Vectors.xml
+D:\XProject\Model_1546\bin\Debug\System.Text.Encodings.Web.xml
+D:\XProject\Model_1546\bin\Debug\System.Text.Json.xml
+D:\XProject\Model_1546\bin\Debug\System.ValueTuple.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Newtonsoft.Json.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Buffers.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Memory.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Numerics.Vectors.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Text.Encodings.Web.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Text.Json.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.ValueTuple.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\Newtonsoft.Json.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Buffers.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Memory.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Numerics.Vectors.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Text.Encodings.Web.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Text.Json.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.ValueTuple.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\ArrayFire.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\ChoETL.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\NumSharp.Core.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.CodeDom.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Data.SqlClient.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\CsvHelper.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\CsvHelper.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.AccessControl.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.Permissions.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.Principal.Windows.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\NumSharp.Core.pdb
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.CodeDom.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Data.SqlClient.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.AccessControl.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.Permissions.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Security.Principal.Windows.xml
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\SRTM.dll
+D:\Mihai\FAF\Teza de licenta\X Project\Model_1546\bin\Debug\System.Device.Portable.dll
+D:\X_Project\Model_1546\obj\Debug\Model_1546.csprojAssemblyReference.cache
+D:\X_Project\Model_1546\obj\Debug\Model_1546.csproj.ResolveComReference.cache
+D:\X_Project\Model_1546\obj\Debug\Model_1546.csproj.CoreCompileInputs.cache
+D:\X_Project\Model_1546\obj\Debug\Model_1546.exe
+D:\X_Project\Model_1546\obj\Debug\Model_1546.pdb
+D:\X_Project\Model_1546\bin\Debug\Model_1546.exe.config
+D:\X_Project\Model_1546\bin\Debug\Model_1546.exe
+D:\X_Project\Model_1546\bin\Debug\Model_1546.pdb
+D:\X_Project\Model_1546\bin\Debug\CsvHelper.dll
+D:\X_Project\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\X_Project\Model_1546\bin\Debug\SRTM.dll
+D:\X_Project\Model_1546\bin\Debug\System.Buffers.dll
+D:\X_Project\Model_1546\bin\Debug\System.CodeDom.dll
+D:\X_Project\Model_1546\bin\Debug\System.ComponentModel.Annotations.dll
+D:\X_Project\Model_1546\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\X_Project\Model_1546\bin\Debug\System.Data.SqlClient.dll
+D:\X_Project\Model_1546\bin\Debug\System.Device.Portable.dll
+D:\X_Project\Model_1546\bin\Debug\System.Memory.dll
+D:\X_Project\Model_1546\bin\Debug\System.Numerics.Vectors.dll
+D:\X_Project\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\X_Project\Model_1546\bin\Debug\System.Security.AccessControl.dll
+D:\X_Project\Model_1546\bin\Debug\System.Security.Permissions.dll
+D:\X_Project\Model_1546\bin\Debug\System.Security.Principal.Windows.dll
+D:\X_Project\Model_1546\bin\Debug\System.Text.Encodings.Web.dll
+D:\X_Project\Model_1546\bin\Debug\System.Text.Json.dll
+D:\X_Project\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\X_Project\Model_1546\bin\Debug\System.ValueTuple.dll
+D:\X_Project\Model_1546\bin\Debug\CsvHelper.xml
+D:\X_Project\Model_1546\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\X_Project\Model_1546\bin\Debug\System.Buffers.xml
+D:\X_Project\Model_1546\bin\Debug\System.CodeDom.xml
+D:\X_Project\Model_1546\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\X_Project\Model_1546\bin\Debug\System.Data.SqlClient.xml
+D:\X_Project\Model_1546\bin\Debug\System.Memory.xml
+D:\X_Project\Model_1546\bin\Debug\System.Numerics.Vectors.xml
+D:\X_Project\Model_1546\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\X_Project\Model_1546\bin\Debug\System.Security.AccessControl.xml
+D:\X_Project\Model_1546\bin\Debug\System.Security.Permissions.xml
+D:\X_Project\Model_1546\bin\Debug\System.Security.Principal.Windows.xml
+D:\X_Project\Model_1546\bin\Debug\System.Text.Encodings.Web.xml
+D:\X_Project\Model_1546\bin\Debug\System.Text.Json.xml
+D:\X_Project\Model_1546\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\X_Project\Model_1546\bin\Debug\System.ValueTuple.xml
+D:\X_Project\Model_1546\obj\Debug\Model_1546.csproj.CopyComplete
+D:\X_Project\Model_1546\bin\Debug\EntityFramework.dll
+D:\X_Project\Model_1546\bin\Debug\EntityFramework.SqlServer.dll
+D:\X_Project\Model_1546\bin\Debug\SQLite.NET.dll
+D:\X_Project\Model_1546\bin\Debug\System.Data.SQLite.dll
+D:\X_Project\Model_1546\bin\Debug\System.Data.SQLite.EF6.dll
+D:\X_Project\Model_1546\bin\Debug\System.Data.SQLite.Linq.dll
+D:\X_Project\Model_1546\bin\Debug\EntityFramework.xml
+D:\X_Project\Model_1546\bin\Debug\EntityFramework.SqlServer.xml
+D:\X_Project\Model_1546\bin\Debug\System.Data.SQLite.xml
+D:\X_Project\Model_1546\bin\Debug\System.Data.SQLite.dll.config

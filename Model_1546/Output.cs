@@ -28,27 +28,21 @@ namespace Model_1546
     }
     public class Output
     {
-        public static void WriteHeaders(string nameTx, string nameRx, double latTx, double lonTx, double distance, double E, double gain, double HorAten, double VertAten, double powerGain, double power)
+        public static void WriteHeaders()
         {
-            var data = new[]
-            {
-                new CsvFields {NameTx = nameTx, NameRx = "NameRx", LatTx = "LatTx", LonTx = "lonTx", Distance = "distance", Strength = "E", Gain = "gain", Hor_Aten = "HorAten", Vert_Aten = "VertAten", Power_Gain = "powerGain", Power = "power"  }
-            };
+            string strFilePath = @"C:\Users\User\Desktop\Output\Output.csv";
+            string strSeperator = ";";
+            StringBuilder sbOutput = new StringBuilder();
 
-            var mem = new MemoryStream();
-            var writer = new StreamWriter(mem);
-            var csvWriter = new CsvWriter(writer, System.Globalization.CultureInfo.CurrentCulture);
+            string[][] inaOutput = new string[][]{
+                new string[]{"NameTx", "NameRx", "LatTx", "LonTx", "Distance", "E", "Gain", "Hor_Aten", "Vert_Aten", "Power_Gain", "Power"},
+                                        };
+            int ilength = inaOutput.GetLength(0);
+            for (int i = 0; i < ilength; i++)
+                     sbOutput.AppendLine(string.Join(strSeperator, inaOutput[i]));
 
-            csvWriter.Configuration.Delimiter = ";";
-            csvWriter.Configuration.HasHeaderRecord = true;
-            csvWriter.Configuration.AutoMap<CsvFields>();
-
-            csvWriter.WriteHeader<CsvFields>();
-            //csvWriter.WriteRecords(data);
-
-            writer.Flush();
-            var result = Encoding.UTF8.GetString(mem.ToArray());
-            File.AppendAllText(@"C:\Users\User\Desktop\Output\Output.csv", result);
+            // Create and write the csv file
+            File.WriteAllText(strFilePath, sbOutput.ToString());
 
 
         }

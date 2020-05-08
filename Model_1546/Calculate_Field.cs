@@ -13,7 +13,7 @@ namespace Model_1546
 
         public static double ReadTerrain(double latitude, double longitude)
         {
-            var srtmData = new SRTMData(@"C:\Users\User\Desktop\SRTM_USGS", new USGSSource());
+            var srtmData = new SRTMData(@"C:\Users\Ciclicci\Desktop\SRTM_USGS", new USGSSource());
 
             //var credentials = new NetworkCredential("mikeyart", "Prince5498");
             //var srtmData = new SRTMData(@"C:\Users\Ciclicci\Desktop\SRTM_NASA", new NASASource(credentials));

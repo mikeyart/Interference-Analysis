@@ -1,6 +1,6 @@
 ﻿using CsvHelper;
-using Esri.ArcGISRuntime.Mapping;
-using Esri.ArcGISRuntime.UI.Controls;
+using SharpKml.Base;
+using SharpKml.Dom;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,14 +23,12 @@ namespace Model_1546
         public double Vert_Aten { get; set; }
         public double Power_Gain { get; set; }
         public double Power { get; set; }
-
-
     }
     public class Output
     {
         public static void WriteHeaders()
         {
-            string strFilePath = @"C:\Users\User\Desktop\Output\Output.csv";
+            string strFilePath = @"C:\Users\Ciclicci\Desktop\Output\Output.csv";
             string strSeperator = ";";
             StringBuilder sbOutput = new StringBuilder();
 
@@ -39,12 +37,10 @@ namespace Model_1546
                                         };
             int ilength = inaOutput.GetLength(0);
             for (int i = 0; i < ilength; i++)
-                     sbOutput.AppendLine(string.Join(strSeperator, inaOutput[i]));
+                sbOutput.AppendLine(string.Join(strSeperator, inaOutput[i]));
 
             // Create and write the csv file
             File.WriteAllText(strFilePath, sbOutput.ToString());
-
-
         }
         public static void WriteCSV(string nameTx, string nameRx, double latTx, double lonTx, double distance, double E, double gain, double HorAten, double VertAten, double powerGain, double power)
         {
@@ -61,25 +57,61 @@ namespace Model_1546
             csvWriter.Configuration.HasHeaderRecord = false;
             csvWriter.Configuration.AutoMap<CsvFields>();
 
-            //csvWriter.WriteHeader<CsvFields>();
             csvWriter.WriteRecords(data);
 
             writer.Flush();
             var result = Encoding.UTF8.GetString(mem.ToArray());
-            File.AppendAllText(@"C:\Users\User\Desktop\Output\Output.csv", result);
+            File.AppendAllText(@"C:\Users\Ciclicci\Desktop\Output\Output.csv", result);
+        }
 
+        public static void WriteDoc(Document doc, string nameRx, double latRx, double longRx, Style style)
+        {
+            Point point = new Point();
+            point.Coordinate = new Vector(latRx, longRx);
+
+            Placemark placemark = new Placemark();
+            placemark.Name = nameRx;
+            placemark.Geometry = point;
+            placemark.StyleUrl = new Uri(style.Id.ToString(), UriKind.Relative);
+            doc.AddFeature(placemark);
+        }
+
+        public static Style Green()
+        {
+            var style = new Style();
+            style.Id = "GreenLabel";
+            style.Label = new LabelStyle();
+            style.Label.Color = new Color32(255, 0, 255, 0);
+            return style;
+        }
+
+        public static Style Red()
+        {
+            var style = new Style();
+            style.Id = "RedLabel";
+            style.Label = new LabelStyle();
+            style.Icon.Color = new Color32(255, 0, 0, 255);
+            return style;
+        }
+
+        public static void GetStyle(double E, Style style)
+        {
+            if (E < -110)
+                style = Green();
+            else
+                style = Red();
+        }
+
+        public static void WriteKML(Document doc)
+        {
+            Kml kml = new Kml();
+            kml.Feature = doc;
+            Serializer serializer = new Serializer();
+            serializer.Serialize(kml);
+            Console.WriteLine(serializer.Xml);
+            File.AppendAllText(@"C:\Users\Ciclicci\Desktop\Output\Output.kml", serializer.Xml.ToString());
 
         }
 
-
-
-        /*public static void GetBasemap()
-        {
-            MapView mw = new MapView();
-            Map m = new Map();
-            Map.LoadFromUriAsync(http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer)
-               
-        }*/
-            
     }
 }

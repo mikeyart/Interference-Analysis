@@ -14,13 +14,13 @@ namespace Model_1546
         {
             List<string> Name = new List<string>();
             List<double> Longitude = new List<double>();
-            
+
             List<double> Height = new List<double>();
             List<double> Power = new List<double>();
             string name;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = C:\BR_Soft\Terrasys\Data\BRIFIC_2891.db3 ; Version=3";
+            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -30,7 +30,7 @@ namespace Model_1546
 
             SQLiteDataReader rdr = cmd.ExecuteReader();
 
-            while(rdr.Read())
+            while (rdr.Read())
             {
                 name = rdr.GetString(0);
                 Name.Add(name);
@@ -44,7 +44,7 @@ namespace Model_1546
             double lat;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = C:\BR_Soft\Terrasys\Data\BRIFIC_2891.db3 ; Version=3";
+            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -58,7 +58,7 @@ namespace Model_1546
             {
                 lat = rdr.GetDouble(0);
                 Latitude.Add(lat);
-               
+
             }
             return Latitude;
         }
@@ -69,7 +69,7 @@ namespace Model_1546
             double lon;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = C:\BR_Soft\Terrasys\Data\BRIFIC_2891.db3 ; Version=3";
+            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -95,7 +95,7 @@ namespace Model_1546
             double height;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = C:\BR_Soft\Terrasys\Data\BRIFIC_2891.db3 ; Version=3";
+            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -120,7 +120,7 @@ namespace Model_1546
             double power;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = C:\BR_Soft\Terrasys\Data\BRIFIC_2891.db3 ; Version=3";
+            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
             con.Open();
 
             var cmd = new SQLiteCommand(con);

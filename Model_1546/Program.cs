@@ -10,18 +10,19 @@ using System.Threading.Tasks;
 
 namespace Model_1546
 {
-    class Program
+    public class Program
     {
 
-        static void Main(string[] args)
+        public static void Main()
         {
             double Distance, Heff, TCA, HorAten, VertAten, Gain, E, Powgain, Pow;
             double SumPow = 0;
+            double aux = 0;
 
             var Doc = new Document();
             var doc = new Document();
 
-            var style = new Style();
+            //var style = new Style();
 
             double[] LatRx = Station_Add.GetLatitude();
             double[] LongRx = Station_Add.GetLongitude();
@@ -44,7 +45,8 @@ namespace Model_1546
 
             for (int i = 0; i < 1/*LatRx.Length*/; i++)
             {
-                for (int j = 0; j < 15/*LatTx.Count*/; j++)
+                var style = new Style();
+                for (int j = 0; j < LatTx.Count; j++)
                 {
                     var nCoord = new GeoCoordinate(LatRx[i], LongRx[i]);
                     var eCoord = new GeoCoordinate(LatTx[j], LongTx[j]);
@@ -66,13 +68,16 @@ namespace Model_1546
                 Top = Power.OrderByDescending(x => x).Take(10);
                 foreach (var item in Top)
                 {
-                    SumPow += item;
+                    aux += Math.Pow(10, item / 10);
+                    
                 }
+                SumPow = 10 * Math.Log10(aux);
                 Power.Clear();
                 Output.GetStyle(SumPow, style);
-                //Output.WriteDoc(Doc, NameRx[i], LatRx[i], LongRx[i], style);
+                Output.WriteDoc(Doc, NameRx[i], LatRx[i], LongRx[i], style);
+                style = null;
             }
-            //Output.WriteKML(Doc);
+            Output.WriteKML(Doc);
         }
     }
 }

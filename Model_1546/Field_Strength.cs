@@ -40,9 +40,8 @@ namespace Model_1546
 
         public string GetTabFieldStrength(double distance, string path, int time, double height, int freq)
         {
-            string filename = "Tabulated.csv";
-            string path_file = Path.Combine(Environment.CurrentDirectory, filename);
-            DataTable dt = ConvertCSVtoDataTable(path_file);
+            string filepath = @"B:\Tabulated.csv";
+            DataTable dt = ConvertCSVtoDataTable(filepath);
 
             DataRow[] Rows = dt.Select(String.Format("Frequency = '{0}' AND Path = '{1}' AND Time = '{2}' AND Values = '{3}'", freq, path, time, distance));
 

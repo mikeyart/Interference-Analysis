@@ -74,32 +74,32 @@ namespace Model_1546
             placemark.Geometry = point;
             placemark.StyleUrl = new Uri(style.Id.ToString(), UriKind.Relative);
             doc.AddFeature(placemark);
+            doc.AddStyle(style);
         }
 
-        public static Style Green()
+        public static Style Green(Style style)
         {
-            var style = new Style();
             style.Id = "GreenLabel";
             style.Label = new LabelStyle();
             style.Label.Color = new Color32(255, 0, 255, 0);
+            style.Icon = new IconStyle();
             return style;
         }
 
-        public static Style Red()
+        public static Style Red(Style style)
         {
-            var style = new Style();
             style.Id = "RedLabel";
             style.Label = new LabelStyle();
-            style.Icon.Color = new Color32(255, 0, 0, 255);
+            style.Label.Color = new Color32(255, 0, 0, 255);
             return style;
         }
 
         public static void GetStyle(double E, Style style)
         {
             if (E < -110)
-                style = Green();
+                style = Green(style);
             else
-                style = Red();
+                style = Red(style);
         }
 
         public static void WriteKML(Document doc)

@@ -37,9 +37,8 @@ namespace Model_1546
         public static double GetHorAten(int azimuth, int tilt)
         {
             
-                string filename = "Antenna.csv";
-                string path_file = Path.Combine(Environment.CurrentDirectory, filename);
-                DataTable dt = ConvertCSVtoDataTable(path_file);
+                string filepath = @"B:\Antenna.csv";
+                DataTable dt = ConvertCSVtoDataTable(filepath);
                 DataRow[] H_Ang = dt.Select(String.Format("H_Ang = '{0}'", azimuth));
             if (tilt < 2)
             {
@@ -71,9 +70,9 @@ namespace Model_1546
         public static double GetVertAten(double latTx,double lonTx, double latRx, double lonRx, double hRx, int tilt)
         {
             double C, c, sinalfa, a, b, cosc, alfa, epsilon, pi2;
-            string filename = "Antenna.csv";
-            string path_file = Path.Combine(Environment.CurrentDirectory, filename);
-            DataTable dt = ConvertCSVtoDataTable(path_file);
+
+            string filepath = @"B:\Antenna.csv";
+            DataTable dt = ConvertCSVtoDataTable(filepath);
 
             var nCoord = new GeoCoordinate(latRx, lonRx);
             var eCoord = new GeoCoordinate(49.50555556, 29.88638889);
@@ -124,9 +123,8 @@ namespace Model_1546
 
         public static double GetGain(int tilt)
         {
-            string filename = "Antenna.csv";
-            string path_file = Path.Combine(Environment.CurrentDirectory, filename);
-            DataTable dt = ConvertCSVtoDataTable(path_file);
+            string filepath = @"B:\Antenna.csv";
+            DataTable dt = ConvertCSVtoDataTable(filepath);
             DataRow[] H_Ang = dt.Select("H_Ang = 0");
 
             if (tilt < 2)

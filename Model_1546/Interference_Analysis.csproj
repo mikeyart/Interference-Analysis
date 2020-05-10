@@ -295,6 +295,7 @@
     <Compile Include="Antenna.cs" />
     <Compile Include="BRIFIC_Database.cs" />
     <Compile Include="Calculate_Field.cs" />
+    <Compile Include="Calculation.cs" />
     <Compile Include="Distance_Interpolation.cs" />
     <Compile Include="Field_Strength.cs" />
     <Compile Include="Frequency_Interpolation.cs" />

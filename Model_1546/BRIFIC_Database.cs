@@ -5,11 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Forms;
 
 namespace Model_1546
 {
     public class BRIFIC_Database
     {
+
         public static List<string> GetNameTx()
         {
             List<string> Name = new List<string>();
@@ -20,7 +22,9 @@ namespace Model_1546
             string name;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+            string source = t.Text;
+            con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -44,7 +48,9 @@ namespace Model_1546
             double lat;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+            string source = t.Text;
+            con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -69,7 +75,9 @@ namespace Model_1546
             double lon;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+            string source = t.Text;
+            con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -95,7 +103,9 @@ namespace Model_1546
             double height;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+            string source = t.Text;
+            con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
@@ -120,7 +130,9 @@ namespace Model_1546
             double power;
 
             var con = new SQLiteConnection();
-            con.ConnectionString = @"Data Source = B:\BRIFIC_2891.db3 ; Version=3";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+            string source = t.Text;
+            con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);

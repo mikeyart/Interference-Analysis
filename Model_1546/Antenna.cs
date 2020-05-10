@@ -3,7 +3,7 @@ using System.Data;
 using System.Device.Location;
 using System.IO;
 using System.Linq;
-
+using System.Windows.Forms;
 
 namespace Model_1546
 {
@@ -36,10 +36,10 @@ namespace Model_1546
 
         public static double GetHorAten(int azimuth, int tilt)
         {
-            
-                string filepath = @"B:\Antenna.csv";
-                DataTable dt = ConvertCSVtoDataTable(filepath);
-                DataRow[] H_Ang = dt.Select(String.Format("H_Ang = '{0}'", azimuth));
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
+            string filepath = t.Text;
+            DataTable dt = ConvertCSVtoDataTable(filepath);
+            DataRow[] H_Ang = dt.Select(String.Format("H_Ang = '{0}'", azimuth));
             if (tilt < 2)
             {
                 tilt = 2;
@@ -71,7 +71,8 @@ namespace Model_1546
         {
             double C, c, sinalfa, a, b, cosc, alfa, epsilon, pi2;
 
-            string filepath = @"B:\Antenna.csv";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
+            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             var nCoord = new GeoCoordinate(latRx, lonRx);
@@ -123,7 +124,8 @@ namespace Model_1546
 
         public static double GetGain(int tilt)
         {
-            string filepath = @"B:\Antenna.csv";
+            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
+            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
             DataRow[] H_Ang = dt.Select("H_Ang = 0");
 

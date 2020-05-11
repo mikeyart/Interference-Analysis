@@ -23,7 +23,7 @@ namespace Model_1546
 
         }
 
-        public static double TerrainClearanceAngleCorrectionRx(double angle, int freq)
+        private static double TerrainClearanceAngleCorrectionRx(double angle, int freq)
         {
             double v_prim, v, Jv, Jv_prim,corr;
 
@@ -42,7 +42,7 @@ namespace Model_1546
             }
         }
 
-        public static double Ang( double value)
+        private static double Ang( double value)
         {
             double angle = value + 90;
             return (angle + value) % 360;
@@ -84,7 +84,7 @@ namespace Model_1546
             else { return 0; }
         }
 
-        public static double rec_corr(double distance, string path, int time, double height, int freq, string option43, double angle, bool use_rTCA, double rTCA)
+        private static double rec_corr(double distance, string path, int time, double height, int freq, string option43, double angle, bool use_rTCA, double rTCA)
         {
             double fsr, rTCA_correction;
 

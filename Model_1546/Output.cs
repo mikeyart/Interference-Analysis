@@ -28,7 +28,7 @@ namespace Model_1546
     {
         public static void WriteHeaders()
         {
-            string strFilePath = @"C:\Users\Ciclicci\Desktop\Output\Output.csv";
+            string strFilePath = @"C:\Users\User\Desktop\Output\Output.csv";
             string strSeperator = ";";
             StringBuilder sbOutput = new StringBuilder();
 
@@ -42,6 +42,7 @@ namespace Model_1546
             // Create and write the csv file
             File.WriteAllText(strFilePath, sbOutput.ToString());
         }
+
         public static void WriteCSV(string nameTx, string nameRx, double latTx, double lonTx, double distance, double E, double gain, double HorAten, double VertAten, double powerGain, double power)
         {
             var data = new[]
@@ -61,7 +62,7 @@ namespace Model_1546
 
             writer.Flush();
             var result = Encoding.UTF8.GetString(mem.ToArray());
-            File.AppendAllText(@"C:\Users\Ciclicci\Desktop\Output\Output.csv", result);
+            File.AppendAllText(@"C:\Users\User\Desktop\Output\Output.csv", result);
         }
 
         public static void WriteDoc(Document doc, string nameRx, double latRx, double longRx, Style style)
@@ -77,7 +78,7 @@ namespace Model_1546
             doc.AddStyle(style);
         }
 
-        public static Style Green(Style style)
+        private static Style Green(Style style)
         {
             style.Id = "GreenLabel";
             style.Label = new LabelStyle();
@@ -86,7 +87,7 @@ namespace Model_1546
             return style;
         }
 
-        public static Style Red(Style style)
+        private static Style Red(Style style)
         {
             style.Id = "RedLabel";
             style.Label = new LabelStyle();
@@ -109,7 +110,7 @@ namespace Model_1546
             Serializer serializer = new Serializer();
             serializer.Serialize(kml);
             Console.WriteLine(serializer.Xml);
-            File.AppendAllText(@"C:\Users\Ciclicci\Desktop\Output\Output.kml", serializer.Xml.ToString());
+            File.AppendAllText(@"C:\Users\User\Desktop\Output\Output.kml", serializer.Xml.ToString());
 
         }
 

@@ -9,7 +9,10 @@ namespace Model_1546
 {
     public class Antenna
     {
-        public static DataTable ConvertCSVtoDataTable(string strFilePath)
+        private static System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
+        private static string filepath = t.Text;
+
+        private static DataTable ConvertCSVtoDataTable(string strFilePath)
         {
             DataTable dt = new DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
@@ -36,8 +39,6 @@ namespace Model_1546
 
         public static double GetHorAten(int azimuth, int tilt)
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
             DataRow[] H_Ang = dt.Select(String.Format("H_Ang = '{0}'", azimuth));
             if (tilt < 2)
@@ -71,8 +72,6 @@ namespace Model_1546
         {
             double C, c, sinalfa, a, b, cosc, alfa, epsilon, pi2;
 
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             var nCoord = new GeoCoordinate(latRx, lonRx);
@@ -124,8 +123,6 @@ namespace Model_1546
 
         public static double GetGain(int tilt)
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox3"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
             DataRow[] H_Ang = dt.Select("H_Ang = 0");
 

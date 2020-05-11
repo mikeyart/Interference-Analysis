@@ -11,9 +11,9 @@ namespace Model_1546
     public class Calculate_Field
     {
 
-        public static double ReadTerrain(double latitude, double longitude)
+        private static double ReadTerrain(double latitude, double longitude)
         {
-            var srtmData = new SRTMData(@"C:\Users\Ciclicci\Desktop\SRTM_USGS", new USGSSource());
+            var srtmData = new SRTMData(@"C:\Users\User\Desktop\SRTM_USGS", new USGSSource());
 
             //var credentials = new NetworkCredential("mikeyart", "Prince5498");
             //var srtmData = new SRTMData(@"C:\Users\Ciclicci\Desktop\SRTM_NASA", new NASASource(credentials));
@@ -24,7 +24,7 @@ namespace Model_1546
             return elevation;
         }
 
-        public static double Coords(double lat, double lon, double distance, double theta)
+        private static double Coords(double lat, double lon, double distance, double theta)
         {
             double lat2, lon2, angdist, height, forAtana, forAtanb, finalLat, finalLon;
 
@@ -69,7 +69,7 @@ namespace Model_1546
             return hef;
         }
 
-        public static double Bearing(double lat1, double lon1, double lat2, double lon2)
+        private static double Bearing(double lat1, double lon1, double lat2, double lon2)
         {
             double y, dX, dY, Azimuth, bearing;
 
@@ -106,7 +106,6 @@ namespace Model_1546
 
             return tca;
         }
-
 
         public static double CalculateField(double distance,int time, int freq, double height,string option43, double angle, bool use_rTCA, double rTCA,double power, int ag12)
         {           

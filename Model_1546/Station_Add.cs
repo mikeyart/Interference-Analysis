@@ -9,7 +9,10 @@ namespace Model_1546
    
     public class Station_Add
     {
-        public static DataTable ConvertCSVtoDataTable(string strFilePath)
+        private static System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
+        private static string filepath = t.Text;
+
+        private static DataTable ConvertCSVtoDataTable(string strFilePath)
         {
             DataTable dt = new DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
@@ -34,19 +37,17 @@ namespace Model_1546
             return dt;
         }
 
-        public static string[] GetName()
+        public static string[] GetNameRx()
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
+            
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] name = dt.AsEnumerable().Select(s => s.Field<string>("Site_Name")).ToArray<string>();
             return name;
         }
-        public static double[] GetLatitude()
+
+        public static double[] GetLatRx()
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] latitude = dt.AsEnumerable().Select(s => s.Field<string>("Latitude")).ToArray<string>();
@@ -54,10 +55,8 @@ namespace Model_1546
             return lat;
         }
 
-        public static double[] GetLongitude()
+        public static double[] GetLonRx()
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] longitude = dt.AsEnumerable().Select(s => s.Field<string>("Longitude")).ToArray<string>();
@@ -65,10 +64,8 @@ namespace Model_1546
             return lon;
         }
 
-        public static double[] GetHeight()
+        public static double[] GetHeightRx()
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] height = dt.AsEnumerable().Select(s => s.Field<string>("Height")).ToArray<string>();
@@ -76,10 +73,8 @@ namespace Model_1546
             return h;
         }
 
-        public static int[] GetAzimuth()
+        public static int[] GetAzimuthRx()
         {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] azimuth = dt.AsEnumerable().Select(s => s.Field<string>("Azimuth")).ToArray<string>();
@@ -87,10 +82,8 @@ namespace Model_1546
             return az;
         }
 
-        public static int[] GetTilt()
-        {
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox2"] as System.Windows.Forms.TextBox;
-            string filepath = t.Text;
+        public static int[] GetTiltRx()
+        {            
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             string[] elevation = dt.AsEnumerable().Select(s => s.Field<string>("Tilt")).ToArray<string>();

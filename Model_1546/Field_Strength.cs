@@ -7,7 +7,9 @@ namespace Model_1546
 {
     public class Field_Strength
     {
-        public static DataTable ConvertCSVtoDataTable(string strFilePath)
+        private static string filepath = @"D:\Teza de licenta\Interference-Analysis\Tabulated.csv";
+
+        private static DataTable ConvertCSVtoDataTable(string strFilePath)
         {
             DataTable dt = new DataTable();
             using (StreamReader sr = new StreamReader(strFilePath))
@@ -40,7 +42,6 @@ namespace Model_1546
 
         public string GetTabFieldStrength(double distance, string path, int time, double height, int freq)
         {
-            string filepath = @"B:\Tabulated.csv";
             DataTable dt = ConvertCSVtoDataTable(filepath);
 
             DataRow[] Rows = dt.Select(String.Format("Frequency = '{0}' AND Path = '{1}' AND Time = '{2}' AND Values = '{3}'", freq, path, time, distance));

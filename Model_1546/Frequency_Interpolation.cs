@@ -26,9 +26,6 @@ namespace Model_1546
                 E = E_inf + (E_sup - E_inf) * Math.Log10(freq * 1.0 / f_inf * 1.0) / Math.Log10(f_sup * 1.0 / f_inf * 1.0);
                 return E;
             }
-        }
-
-
-        
+        }      
     }
 }

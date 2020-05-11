@@ -20,8 +20,8 @@ namespace Model_1546
             var doc = new Document();
 
 
-            double[] LatRx = Station_Add.GetLatitude();
-            double[] LongRx = Station_Add.GetLongitude();
+            double[] LatRx = Station_Add.GetLatRx();
+            double[] LongRx = Station_Add.GetLonRx();
             List<double> LatTx = BRIFIC_Database.GetLatTx();
             List<double> LongTx = BRIFIC_Database.GetLonTx();
             List<double> PowerTx = BRIFIC_Database.GetPowerTx();
@@ -29,14 +29,14 @@ namespace Model_1546
             List<double> Power = new List<double>();
             IEnumerable<double> Top;
 
-            double[] HeightRx = Station_Add.GetHeight();
+            double[] HeightRx = Station_Add.GetHeightRx();
             List<double> HeightTx = BRIFIC_Database.GetHeightTx();
 
-            string[] NameRx = Station_Add.GetName();
+            string[] NameRx = Station_Add.GetNameRx();
             List<string> NameTx = BRIFIC_Database.GetNameTx();
 
-            int[] Azimuth = Station_Add.GetAzimuth();
-            int[] Tilt = Station_Add.GetTilt();
+            int[] Azimuth = Station_Add.GetAzimuthRx();
+            int[] Tilt = Station_Add.GetTiltRx();
 
             Output.WriteHeaders();
 

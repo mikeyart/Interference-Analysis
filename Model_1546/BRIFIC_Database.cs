@@ -11,6 +11,8 @@ namespace Model_1546
 {
     public class BRIFIC_Database
     {
+        private static System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
+        private static string source = t.Text;
 
         public static List<string> GetNameTx()
         {
@@ -22,13 +24,12 @@ namespace Model_1546
             string name;
 
             var con = new SQLiteConnection();
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
-            string source = t.Text;
+            
             con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
-            cmd.CommandText = "SELECT site_name FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32";
+            cmd.CommandText = "SELECT site_name FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32 AND fragment = 'GE06D'";
 
             cmd.Prepare();
 
@@ -48,13 +49,11 @@ namespace Model_1546
             double lat;
 
             var con = new SQLiteConnection();
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
-            string source = t.Text;
             con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
-            cmd.CommandText = "SELECT lat_dec FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32";
+            cmd.CommandText = "SELECT lat_dec FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32 AND fragment = 'GE06D'";
 
             cmd.Prepare();
 
@@ -75,13 +74,11 @@ namespace Model_1546
             double lon;
 
             var con = new SQLiteConnection();
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
-            string source = t.Text;
             con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
-            cmd.CommandText = "SELECT long_dec FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32";
+            cmd.CommandText = "SELECT long_dec FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32 AND fragment = 'GE06D'";
 
             cmd.Prepare();
 
@@ -96,20 +93,17 @@ namespace Model_1546
             return Longitude;
         }
 
-
         public static List<double> GetHeightTx()
         {
             List<double> Height = new List<double>();
             double height;
 
             var con = new SQLiteConnection();
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
-            string source = t.Text;
             con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
-            cmd.CommandText = "SELECT hgt_agl FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32";
+            cmd.CommandText = "SELECT hgt_agl FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32 AND fragment = 'GE06D'";
 
             cmd.Prepare();
 
@@ -130,13 +124,12 @@ namespace Model_1546
             double power;
 
             var con = new SQLiteConnection();
-            System.Windows.Forms.TextBox t = Application.OpenForms["Program"].Controls["textbox1"] as System.Windows.Forms.TextBox;
-            string source = t.Text;
+           
             con.ConnectionString = String.Format(@"Data Source = {0} ; Version=3", source);
             con.Open();
 
             var cmd = new SQLiteCommand(con);
-            cmd.CommandText = "SELECT erp_dbw FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32";
+            cmd.CommandText = "SELECT erp_dbw FROM fmtv_terra WHERE adm = 'UKR' AND notice_typ = 'GT1' AND tv_chan BETWEEN 50 AND 53 AND lat_deg BETWEEN 45 AND 49 AND long_dec BETWEEN 26 AND 32 AND fragment = 'GE06D'";
 
             cmd.Prepare();
 
